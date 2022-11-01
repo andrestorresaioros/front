@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    --Weights: 200, 400, 600;
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    max-width: 100px;
+    margin-left: auto;
+    display: block;
+}
+
+
+.content>h1 {
+    text-align: left;
+}
+
+.content>p {
+    text-align: center;
+}
+
+.card {
+    border-top: 5px solid var(--Red);
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    font-size: 15px;
+}
+
+#azul {
+    border-top: 5px solid var(--Cyan);
+}
+
+#oscuro {
+    border-top: 5px solid var(--Blue);
+    
+}
+
+#amarillo {
+    border-top: 5px solid var(--Orange);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    color: var(--VeryDarkBlue);
+}
+
+p {
+    padding: 0px;
+    color: var(--VeryDarkBlue);
+}
+
+@media (min-width:375px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+
+    .content div:nth-child(3) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .content div:nth-child(1) {
+        position: relative;
+        top: 150px;
+    }
+    .content div:nth-child(4) {
+        position: relative;
+        top: 150px;
+    }
+
+}
