@@ -51,7 +51,6 @@ img {
 
 #oscuro {
     border-top: 5px solid var(--Blue);
-    
 }
 
 #amarillo {
@@ -60,7 +59,7 @@ img {
 
 h1 {
     font-weight: bold;
-    font-size: x-large;
+    font-size: 150%;
     margin-top: 5px;
     color: var(--VeryDarkBlue);
 }
