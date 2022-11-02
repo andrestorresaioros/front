@@ -18,8 +18,9 @@
  }
 
 header {
+    font-weight: 300 px;
     text-align: center;
-    max-width: 550px;
+    max-width: 320px;
     margin: auto;
 }
 
@@ -59,6 +60,7 @@ img {
 
 h1 {
     font-weight: bold;
+    font-size: x-large;
     margin-top: 5px;
     color: var(--VeryDarkBlue);
 }
@@ -72,6 +74,29 @@ p {
 }
 
 @media (min-width:375px) {
+    #lighter { 
+        font-size: 235%;
+        font-weight:lighter;
+        margin-bottom: 1px;
+        margin-top: 40px;
+     }
+    #tittle{
+        font-size: 235%;
+    }
+    header {
+        font-weight: 600 px;
+        text-align: center;
+        max-width: 550px;
+        margin: auto;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin-top: 5px;
+        color: var(--VeryDarkBlue);
+        
+    }
+   
     .content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
